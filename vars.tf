@@ -1,3 +1,9 @@
 variable "subnet_ids" {}
 variable "env" {}
 variable "tags" {}
+variable "skip_final_snapshot" {}
+variable "preferred_backup_window" {}
+variable "backup_retention_period" {}
+variable "sg_ingress_cidr" {}
+variable "vpc_id" {}
+variable "engine_version" {}
