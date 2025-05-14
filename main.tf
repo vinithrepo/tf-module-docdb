@@ -28,9 +28,8 @@ resource "aws_docdb_cluster_parameter_group" "main" {
   name        = "${local.name_prefix}-pg"
   description = "${local.name_prefix}-pg"
   tags        = merge(local.tags, { Name = "${local.name_prefix}-pg" })
-
-
 }
+
 resource "aws_docdb_cluster" "main" {
   cluster_identifier              = "${local.name_prefix}-cluster"
   engine                          = "docdb"
