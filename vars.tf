@@ -7,3 +7,6 @@ variable "backup_retention_period" {}
 variable "sg_ingress_cidr" {}
 variable "vpc_id" {}
 variable "engine_version" {}
+variable "engine_family" {}
+variable "instance_count" {}
+variable "instance_class" {}
